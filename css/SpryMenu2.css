@@ -1,0 +1,133 @@
+/*Menu Bar styling classes*/
+ul.MenuBarHorizontal{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: 1200px;
+}
+ul.MenuBarActive{
+	z-index: 1000;
+}
+ul.MenuBarHorizontal li{
+	margin: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	padding: 0;
+	background-image: url(images/img01.jpg);
+	line-height: 50px;
+}
+ul.MenuBarHorizontal ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	z-index: 1020;
+	cursor: default;
+	width: 8.2em;
+	position: absolute;
+	left: -1000em;
+}
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible{
+	left: auto;
+}
+ul.MenuBarHorizontal ul li{
+	width: 187px;
+	line-height: 25;
+}
+
+ul.MenuBarHorizontal ul li2{
+	width: 153px;
+	line-height: 25;
+}
+ul.MenuBarHorizontal ul ul{
+	position: absolute;
+	margin: -5% 0 0 95%;
+}
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible{
+	left: auto;
+	top: 0;
+}
+ul.MenuBarHorizontal ul{
+	border: 1px solid #CCC;
+}
+ul.MenuBarHorizontal a{
+	display: block;
+	line-height: 50px;
+	margin-right: 1px;
+	padding: 0px 20px 0px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: #1F1F1F;
+	border: none;
+}
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus{
+	background: url(../images/img01.jpg) repeat;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #FFFFFF;
+	
+}
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible{
+	background: url(../images/img01.jpg) repeat;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+ul.MenuBarHorizontal a.MenuBarItemSubmenu{
+	
+	background-position: 95% 50%;
+	line-height: 50px;
+}
+
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenu{
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	background-color: #000;
+	border: medium solid #333;
+	border-radius: 8px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #FFF;
+	padding: 1px;
+	width: 187px;
+}
+
+ul.MenuBarHorizontal a.MenuBarItemSubmenuHover{
+	background: url(../images/img01.jpg) repeat;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+ul.MenuBarHorizontal ul a.MenuBarItemSubmenuHover{
+	background: url(../images/img01.jpg) repeat;
+	border-radius: 8px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+
+ul.MenuBarHorizontal iframe{
+	position: absolute;
+	z-index: 1010;
+}
+@media screen, projection{
+	ul.MenuBarHorizontal li.MenuBarItemIE{
+		display: inline;
+		f\loat: left;
+		background: #FFF;
+	}
+}
